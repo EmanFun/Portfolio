@@ -1,0 +1,16 @@
+#root {
+  width: 100%;
+  min-width: 320px;
+  min-height: 100vh;
+
+  padding: 0;
+  text-align: center;
+}
+
+#vacio{
+
+  width: 100%;
+  height: 400px;
+
+}
+
