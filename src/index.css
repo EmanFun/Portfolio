@@ -1,12 +1,10 @@
 :root {
-  font-family: 'Montserrat', system-ui, 'Roboto', 'Poppins';
+  font-family: 'InK Free','Montserrat', system-ui, 'Roboto', 'Poppins';
   line-height: 1.5;
-  font-weight: 400;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-  
-  font-synthesis: none;
+  color: #0B0B0D;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;  
@@ -21,8 +19,8 @@ body {
   background-color: #F5E134;
   background-size: 100%;
   background-attachment: fixed;
-  display: flex;
-  justify-content: center;
+
+
 
 
 }

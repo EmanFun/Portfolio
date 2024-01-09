@@ -1,14 +1,15 @@
 
 import {Contact} from './Components/Modules/Contact'
 import './App.css'
-
+import { About } from './Components/Modules/AboutUs'
+import { Projects } from './Components/Modules/Projects'
 function App() {
 
 
   return (
     <main id='root'>
-    <section id='vacio'>
-    </section>
+    <About/>
+    <Projects/>
     <Contact/>
     </main>
   )
