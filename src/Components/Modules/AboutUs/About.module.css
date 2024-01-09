@@ -1,0 +1,30 @@
+.container{
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+hr{
+    border: 0;
+    height: 0;
+    box-shadow: 0 0 10px 1px black;
+}
+hr:after{
+    content: "\00a0";;
+}
+
+.about{
+    width: 70%;
+    height: 10%;
+
+}
+.about h1{
+    height: 80px;
+    font-size: 2rem;
+}
+.about p{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-weight: 700;
+    font-size: 20px;
+}
