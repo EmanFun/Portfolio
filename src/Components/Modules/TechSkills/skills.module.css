@@ -1,0 +1,13 @@
+.container{
+    margin: 2rem;
+    height: 400px;
+    width: 100%;
+
+}
+.skills{
+    padding: 10%;
+}
+
+.skills svg{
+    margin: 10px;
+}

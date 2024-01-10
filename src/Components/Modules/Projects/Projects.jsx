@@ -21,7 +21,7 @@ const Projects = () => {
                 }
             
         </div>
-        <hr/>
+
     </section>
   );
 };
