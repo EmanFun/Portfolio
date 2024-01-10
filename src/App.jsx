@@ -4,6 +4,7 @@ import './App.css'
 import { About } from './Components/Modules/AboutUs'
 import { Projects } from './Components/Modules/Projects'
 import  { Skills }  from './Components/Modules/TechSkills'
+import { Social } from './Components/Modules/Social'
 function App() {
 
 
@@ -13,6 +14,7 @@ function App() {
     <Projects/>
     <Skills/>
     <Contact/>
+    <Social/>
     </main>
   )
 }

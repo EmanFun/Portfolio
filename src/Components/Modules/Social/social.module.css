@@ -1,0 +1,11 @@
+.container{
+    background-color: black;
+    width: 100%;
+}
+
+.social{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
