@@ -1,4 +1,5 @@
 import React from "react";
+import { TypeAnimation } from "react-type-animation";
 import {container, skills} from './skills.module.css'
 
 const techIcons = [
@@ -34,6 +35,17 @@ const Skills = () => {
   return (
     <section className={container}>
         <hr/>
+        <TypeAnimation
+            sequence={[
+                'TECHS SKILLS',
+                1000,
+            ]}
+            wrapper="h2"
+            speed={50}
+
+            repeat={1}
+        />
+
         <div className={skills}>
 
             {
