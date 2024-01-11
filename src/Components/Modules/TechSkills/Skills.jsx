@@ -3,33 +3,42 @@ import { TypeAnimation } from "react-type-animation";
 import {container, skills} from './skills.module.css'
 
 const techIcons = [
-    './src/assets/image/TechIcons/bootstrap.svg',
-    './src/assets/image/TechIcons/css3.svg',
-    './src/assets/image/TechIcons/django.svg',
-    './src/assets/image/TechIcons/docker.svg',
-    './src/assets/image/TechIcons/express.svg',
-    './src/assets/image/TechIcons/git.svg',
-    './src/assets/image/TechIcons/github.svg',
-    './src/assets/image/TechIcons/googlecloud.svg',
-    './src/assets/image/TechIcons/html5.svg',
-    './src/assets/image/TechIcons/javascript.svg',
-    './src/assets/image/TechIcons/mongodb.svg',
-    './src/assets/image/TechIcons/mongoose.svg',
-    './src/assets/image/TechIcons/nextdotjs.svg',
-    './src/assets/image/TechIcons/nodedotjs.svg',
-    './src/assets/image/TechIcons/postgresql.svg',
-    './src/assets/image/TechIcons/python.svg',
-    './src/assets/image/TechIcons/react.svg',
-    './src/assets/image/TechIcons/redux.svg',
-    './src/assets/image/TechIcons/sequelize.svg',
-    './src/assets/image/TechIcons/slack.svg',
-    './src/assets/image/TechIcons/sqlite.svg',
-    './src/assets/image/TechIcons/styledcomponents.svg',
-    './src/assets/image/TechIcons/tailwindcss.svg',
-    './src/assets/image/TechIcons/trello.svg',
-    './src/assets/image/TechIcons/visualstudiocode.svg'
+
 ]
 
+const frontTechs = [
+    './public/TechIcons/bootstrap.svg',
+    './public/TechIcons/javascript.svg',
+    './public/TechIcons/css3.svg',
+    './public/TechIcons/react.svg',
+    './public/TechIcons/redux.svg',
+    './public/TechIcons/html5.svg',
+    './public/TechIcons/styledcomponents.svg',
+    './public/TechIcons/tailwindcss.svg',
+    './public/TechIcons/nextdotjs.svg',
+]
+const backTechs = [
+    
+    './public/TechIcons/django.svg',
+    './public/TechIcons/docker.svg',
+    './public/TechIcons/express.svg',
+    './public/TechIcons/googlecloud.svg',
+    './public/TechIcons/mongodb.svg',
+    './public/TechIcons/mongoose.svg',
+    './public/TechIcons/nodedotjs.svg',
+    './public/TechIcons/postgresql.svg',
+    './public/TechIcons/python.svg',
+    './public/TechIcons/sequelize.svg',
+    './public/TechIcons/sqlite.svg',
+]
+const otherTechs=[
+    
+    './public/TechIcons/git.svg',
+    './public/TechIcons/github.svg',
+    './public/TechIcons/slack.svg',
+    './public/TechIcons/trello.svg',
+    './public/TechIcons/visualstudiocode.svg'
+]
 
 const Skills = () => {
   return (
@@ -47,16 +56,53 @@ const Skills = () => {
         />
 
         <div className={skills}>
-
+            <h4>Front-End</h4>
             {
-                techIcons.map((svg, index) => {
-                    return <svg key={index}
-                            width={50}
-                            height={50}
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                        <image href={svg} width={50} height={50}/>
-                    </svg> 
+                frontTechs.map((svg, index) => {
+                    return<div key={index}>
+                        <svg 
+                                width={50}
+                                height={50}
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                            <image href={svg} width={50} height={50}/>
+                        </svg> 
+                        <span>{svg.substring(svg.lastIndexOf('/') + 1, svg.lastIndexOf('.svg'))}</span>
+                    </div> 
+                })
+            }
+        </div>
+        <div className={skills}>
+            <h4>Back-End</h4>
+            {
+                backTechs.map((svg, index) => {
+                    return <div key={index}>
+                        <svg 
+                                width={50}
+                                height={50}
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                            <image href={svg} width={50} height={50} />
+                        </svg> 
+                        <span>{svg.substring(svg.lastIndexOf('/') + 1, svg.lastIndexOf('.svg'))}</span>
+                    </div>
+                })
+            }
+        </div>
+        <div className={skills}>
+            <h4>Others</h4>
+            {
+                otherTechs.map((svg, index) => {
+                    return <div key={index}>
+                        <svg 
+                                width={50}
+                                height={50}
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                            <image href={svg} width={50} height={50}/>
+                        </svg> 
+                        <span>{svg.substring(svg.lastIndexOf('/') + 1, svg.lastIndexOf('.svg'))}</span>
+                    </div>
                 })
             }
         </div>
