@@ -16,19 +16,29 @@ const Social = () => {
 
             <div className={social}>
                 <div>
-                    <FaPhoneAlt color="white" size={40}/>
+                    <a href="whatsapp://send?phone=5493518018687" target="blank">
+                        <FaPhoneAlt color="black" size={30}/>
+                    </a>
                 </div>
                 <div>
-                    <SiHomeadvisor color="white" size={40}/>
+                    <a href="https://www.google.com/maps/@-31.4170235,-64.1899042,13z?entry=ttu" target="blank">
+                        <SiHomeadvisor color="black" size={30}/>
+                    </a>
                 </div>
                 <div>
-                    <SiGithub color="white" size={40}/>
+                    <a href="https://github.com/EmanFun" target="blank">
+                        <SiGithub color="black" size={30}/>
+                    </a>
                 </div>
                 <div>
-                    <SiLinkedin color="white" size={40}/>
+                    <a href="https://www.linkedin.com/in/emanuelfun" target="blank">
+                        <SiLinkedin color="black" size={30}/>
+                    </a>
                 </div>
                 <div>
-                    <SiInstagram color="white" size={40}/>
+                    <a href="https://www.instagram.com/emanuel_funs/" target="blank">
+                        <SiInstagram color="black" size={30}/>
+                    </a>
                 </div>
 
 
