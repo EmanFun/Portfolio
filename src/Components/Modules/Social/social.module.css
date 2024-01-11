@@ -1,11 +1,17 @@
 .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: black;
     width: 100%;
 }
 
+.wrap{
+    width: 70%;
+}
 .social{
     display: flex;
-    align-items: center;
+    
     justify-content: space-evenly;
 
 }
