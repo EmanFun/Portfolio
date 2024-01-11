@@ -7,9 +7,9 @@
     background-position: center;
     margin: 0;
 }
-@media only screen and (max-width: 1456px) {
+@media only screen and (max-width: 1520px) {
     .divider{
-
+        height: 35vh;
         background-position:bottom;
         background-size: contain;
         background-repeat: no-repeat;
