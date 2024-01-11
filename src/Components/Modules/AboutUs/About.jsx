@@ -15,7 +15,7 @@
                 ]}
                 wrapper="h1"
                 speed={50}
-                style={{ }}
+                style={{ fontWeight: 'bolder' }}
                 repeat={Infinity}
                 />
                 <p>

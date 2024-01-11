@@ -8,7 +8,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;  
-
+  
 }
 
 
@@ -17,6 +17,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #F5E134;
+  
   background-size: 100%;
   background-attachment: fixed;
 
