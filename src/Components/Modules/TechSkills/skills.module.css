@@ -1,6 +1,6 @@
 .container{
     margin: 2rem;
-    height: 40%;
+    height: 30%;
     width: 70%;
     
 }
@@ -8,6 +8,9 @@
     margin: 40px;
     display: flex;
     flex-wrap: wrap;
+    padding: 10px;
+    margin-top: 50px;
+    font-weight: bolder;
  
     
 }
@@ -18,10 +21,16 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 0;
+
+}
+@media only screen and (max-width: 400px) {
+    .skills div{
+        flex-basis: 70px;
+        min-width: 70px;
+    }
 }
 
 
 .skills svg{
-    margin: 10px;
+
 }
