@@ -7,37 +7,37 @@ const techIcons = [
 ]
 
 const frontTechs = [
-    './public/TechIcons/bootstrap.svg',
-    './public/TechIcons/javascript.svg',
-    './public/TechIcons/css3.svg',
-    './public/TechIcons/react.svg',
-    './public/TechIcons/redux.svg',
-    './public/TechIcons/html5.svg',
-    './public/TechIcons/styledcomponents.svg',
-    './public/TechIcons/tailwindcss.svg',
-    './public/TechIcons/nextdotjs.svg',
+    './TechIcons/bootstrap.svg',
+    '/TechIcons/javascript.svg',
+    '/TechIcons/css3.svg',
+    '/TechIcons/react.svg',
+    '/TechIcons/redux.svg',
+    '/TechIcons/html5.svg',
+    '/TechIcons/styledcomponents.svg',
+    '/TechIcons/tailwindcss.svg',
+    '/TechIcons/nextdotjs.svg',
 ]
 const backTechs = [
     
-    './public/TechIcons/django.svg',
-    './public/TechIcons/docker.svg',
-    './public/TechIcons/express.svg',
-    './public/TechIcons/googlecloud.svg',
-    './public/TechIcons/mongodb.svg',
-    './public/TechIcons/mongoose.svg',
-    './public/TechIcons/nodedotjs.svg',
-    './public/TechIcons/postgresql.svg',
-    './public/TechIcons/python.svg',
-    './public/TechIcons/sequelize.svg',
-    './public/TechIcons/sqlite.svg',
+    '/TechIcons/django.svg',
+    '/TechIcons/docker.svg',
+    '/TechIcons/express.svg',
+    '/TechIcons/googlecloud.svg',
+    '/TechIcons/mongodb.svg',
+    '/TechIcons/mongoose.svg',
+    '/TechIcons/nodedotjs.svg',
+    '/TechIcons/postgresql.svg',
+    '/TechIcons/python.svg',
+    '/TechIcons/sequelize.svg',
+    '/TechIcons/sqlite.svg',
 ]
 const otherTechs=[
     
-    './public/TechIcons/git.svg',
-    './public/TechIcons/github.svg',
-    './public/TechIcons/slack.svg',
-    './public/TechIcons/trello.svg',
-    './public/TechIcons/visualstudiocode.svg'
+    '/TechIcons/git.svg',
+    '/TechIcons/github.svg',
+    '/TechIcons/slack.svg',
+    '/TechIcons/trello.svg',
+    '/TechIcons/visualstudiocode.svg'
 ]
 
 const Skills = () => {
