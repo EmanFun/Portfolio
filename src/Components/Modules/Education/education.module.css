@@ -1,0 +1,19 @@
+.container{
+    height: 500px;
+    width: 100%;
+}
+
+.educationContainer{
+    display: inline-flex;
+    gap: 3.5rem;
+    text-align: start;
+}
+.educationContainer div{
+    padding: 1rem;
+    border: solid;
+    border-radius: 1.5rem;
+}
+
+.langContainer{
+    display: inline-flex;
+}
