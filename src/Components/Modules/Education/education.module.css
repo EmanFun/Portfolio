@@ -1,7 +1,13 @@
-.container{
+.wrapper{
+    display: list-item;
+    list-style: none;
     margin: 2rem;
-    height: 600px;
+    height: 500px;
     width: 70%;
+
+}
+.container{
+   margin: 2rem;
 }
 
 .educationContainer{
@@ -14,12 +20,17 @@
     flex-grow: 1;
     flex-basis: 80px;
     padding: 1rem;
-    border: solid;
+    border: solid 1px;
     border-radius: 1.5rem;
+    box-shadow: 0 0 10px 1px black;
 }
 
 .langContainer{
-    height: 100px;
-    width: 70%;
-    
+    margin: 2rem;
+}
+
+@media only screen and (max-width: 540px){
+    .wrapper{
+        height: 800px;
+    }
 }

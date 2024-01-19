@@ -8,12 +8,26 @@
             <div className={about}>
                 <TypeAnimation
                 sequence={[
-                    'Emanuel Funes',
-                    1000,
+                    'Full Stack',
+                    500,
                     'Full Stack Web Developer',
                     1000,
+                    'Full Stack',
+                    500,
+
                 ]}
                 wrapper="h1"
+                speed={50}
+                style={{ fontWeight: 'bolder' }}
+                repeat={Infinity}
+                />
+                <TypeAnimation
+                sequence={[
+                    'Emanuel Funes',
+                    1000,
+
+                ]}
+                wrapper="h2"
                 speed={50}
                 style={{ fontWeight: 'bolder' }}
                 repeat={Infinity}
@@ -24,11 +38,7 @@
                     a buscar oportunidades emocionantes en el campo de la tecnología. Con una mentalidad orientada a 
                     la resolución de problemas y un compromiso con el aprendizaje continuo,
                     aspiro a contribuir al diseño y desarrollo de aplicaciones web de alta calidad.
-
-                </p>
-                
-
-                
+                </p> 
             </div>
         </section>
     );

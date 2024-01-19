@@ -3,7 +3,8 @@ import { Each } from "../../../utils/common/Each"
 import {
   container,
   educationContainer,
-  langContainer
+  langContainer,
+  wrapper
 } from "./education.module.css"
 
 const educationList =[
@@ -18,9 +19,9 @@ const langList = [
 
 const Educaction = () => {
   return (
-    <>
+    <section className={wrapper}>
+      <hr />
       <section className={container}>
-        <hr />
         <h2>EDUCACIÓN PROFESIONAL</h2>
         <div className={educationContainer}>
           <Each of={educationList} render={(item, index)=>(
@@ -33,8 +34,8 @@ const Educaction = () => {
           )}/>
         </div>
       </section>
+      <hr />
       <section className={langContainer}>
-        <hr />
         <h2>Idiomas</h2>
         <div >
             <Each of={langList} render={(item, index)=>(
@@ -44,7 +45,7 @@ const Educaction = () => {
             )}/>
         </div>
       </section>
-    </>
+    </section>
   );
 };
 

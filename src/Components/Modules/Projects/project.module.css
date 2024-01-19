@@ -3,7 +3,7 @@
     width: 70%;
 }
 
-.projectsCpntainer {
+.projectsContainer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,9 +14,13 @@
 
 .projectCard {
     flex-grow: 1;
-    flex-basis: 300px;
+    flex-basis: 100px;
     margin: 15px;
-    border: solid;
+    padding: 10px;
+    border: solid 1px;
+    box-shadow: 0 0 10px 1px black;
+    border-color: #242424;
     border-radius: 2rem;
     height: 10%;
+    
 }
