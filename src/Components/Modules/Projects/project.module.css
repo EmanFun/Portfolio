@@ -1,8 +1,9 @@
-.container{
+.container {
     height: 15%;
     width: 70%;
 }
-.projects{
+
+.projectsCpntainer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,16 +12,11 @@
 
 
 
-.projectCard{
+.projectCard {
     flex-grow: 1;
     flex-basis: 300px;
     margin: 15px;
     border: solid;
     border-radius: 2rem;
-
-
-    
     height: 10%;
-
-
 }

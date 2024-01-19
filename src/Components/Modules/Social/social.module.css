@@ -1,22 +1,15 @@
-.container{
+.container {
     position: fixed;
     top: 10px;
     left: 10px;
     z-index: 999;
-
-
     display: flex;
-    
-
-}
-
-.wrap{
     width: 20%;
+
 }
-.social{
+
+.socialContainer {
     display: flex;
     flex-direction: column;
-    
-
 
 }

@@ -7,14 +7,13 @@ import { SiLinkedin } from "react-icons/si";
 
 
 
-import { container, wrap, social} from './social.module.css'
+import { container, socialContainer} from './social.module.css'
 
 const Social = () => {
   return (
     <footer className={container}>
-        <div className={wrap}>
-
-            <div className={social}>
+        <div >
+            <div className={socialContainer}>
                 <div>
                     <a href="whatsapp://send?phone=5493518018687" target="blank">
                         <FaPhoneAlt color="black" size={30}/>
@@ -40,8 +39,6 @@ const Social = () => {
                         <SiInstagram color="black" size={30}/>
                     </a>
                 </div>
-
-
             </div>
         </div>
     </footer>
