@@ -1,10 +1,7 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
-import {container, skills} from './skills.module.css'
-
-const techIcons = [
-
-]
+import {container, skillsContainer} from './skills.module.css'
+import { Each } from "../../../utils/common/Each";
 
 const frontTechs = [
     './TechIcons/bootstrap.svg',
@@ -55,58 +52,51 @@ const Skills = () => {
             repeat={1}
         />
 
-        <div className={skills}>
+        <div className={skillsContainer}>
             <h4>Front-End</h4>
-            {
-                frontTechs.map((svg, index) => {
-                    return<div key={index}>
-                        <svg 
-                                width={50}
-                                height={50}
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                            <image href={svg} width={50} height={50}/>
-                        </svg> 
-                        <span>{svg.substring(svg.lastIndexOf('/') + 1, svg.lastIndexOf('.svg'))}</span>
-                    </div> 
-                })
-            }
+            <Each of={frontTechs} render={(item, index)=>(
+                <div key={index}>
+                    <svg 
+                            width={50}
+                            height={50}
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                        <image href={item} width={50} height={50}/>
+                    </svg> 
+                <p>{item.substring(item.lastIndexOf('/') + 1, item.lastIndexOf('.svg'))}</p>
+            </div> 
+            )}/>
         </div>
-        <div className={skills}>
+        <div className={skillsContainer}>
             <h4>Back-End</h4>
-            {
-                backTechs.map((svg, index) => {
-                    return <div key={index}>
-                        <svg 
-                                width={50}
-                                height={50}
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                            <image href={svg} width={50} height={50} />
-                        </svg> 
-                        <span>{svg.substring(svg.lastIndexOf('/') + 1, svg.lastIndexOf('.svg'))}</span>
-                    </div>
-                })
-            }
+            <Each of={backTechs} render={(item, index)=>(
+                <div key={index}>
+                    <svg 
+                            width={50}
+                            height={50}
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                        <image href={item} width={50} height={50}/>
+                    </svg> 
+                <p>{item.substring(item.lastIndexOf('/') + 1, item.lastIndexOf('.svg'))}</p>
+            </div> 
+            )}/>
         </div>
-        <div className={skills}>
+        <div className={skillsContainer}>
             <h4>Others</h4>
-            {
-                otherTechs.map((svg, index) => {
-                    return <div key={index}>
-                        <svg 
-                                width={50}
-                                height={50}
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                            <image href={svg} width={50} height={50}/>
-                        </svg> 
-                        <span>{svg.substring(svg.lastIndexOf('/') + 1, svg.lastIndexOf('.svg'))}</span>
-                    </div>
-                })
-            }
+            <Each of={otherTechs} render={(item, index)=>(
+                <div key={index}>
+                    <svg 
+                            width={50}
+                            height={50}
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                        <image href={item} width={50} height={50}/>
+                    </svg> 
+                <p>{item.substring(item.lastIndexOf('/') + 1, item.lastIndexOf('.svg'))}</p>
+            </div> 
+            )}/>
         </div>
-        
     </section>
     );
 };

@@ -1,19 +1,25 @@
 .container{
-    height: 500px;
-    width: 100%;
+    margin: 2rem;
+    height: 600px;
+    width: 70%;
 }
 
 .educationContainer{
-    display: inline-flex;
-    gap: 3.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
     text-align: start;
 }
 .educationContainer div{
+    flex-grow: 1;
+    flex-basis: 80px;
     padding: 1rem;
     border: solid;
     border-radius: 1.5rem;
 }
 
 .langContainer{
-    display: inline-flex;
+    height: 100px;
+    width: 70%;
+    
 }

@@ -18,7 +18,9 @@ const langList = [
 
 const Educaction = () => {
   return (
+    <>
       <section className={container}>
+        <hr />
         <h2>EDUCACIÓN PROFESIONAL</h2>
         <div className={educationContainer}>
           <Each of={educationList} render={(item, index)=>(
@@ -30,15 +32,19 @@ const Educaction = () => {
             </div>
           )}/>
         </div>
+      </section>
+      <section className={langContainer}>
+        <hr />
         <h2>Idiomas</h2>
-        <div className={langContainer}>
+        <div >
             <Each of={langList} render={(item, index)=>(
-              <div>
+              <div key={index}>
                 <p>{item.languague} {item.certification}</p>
               </div>
             )}/>
         </div>
       </section>
+    </>
   );
 };
 
