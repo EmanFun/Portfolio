@@ -24,7 +24,7 @@ const Projects = () => {
             <div key={index} className={projectCard}>
               <h3>{item.title}</h3>
               <p>Rol: {item.rol}</p>
-              <a href={item.link} target="blank">
+              <a href={item.link} target="self">
                 <FaExternalLinkSquareAlt color="black" size={30}/>
               </a>
             </div> 

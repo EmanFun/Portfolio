@@ -46,12 +46,13 @@ const Social = () => {
                 </div>
                 <div>
                     <a href={`mailto:${mailTo}?subject=${subject}&body=${message}`} target="blank">
-                        <RiMailSendFill color="black" size={30}/>
+                        <RiMailSendFill color="black" size={31}/>
                     </a>
                 </div>
                 <div>
                     <a href="https://docs.google.com/document/d/1KB9wznPHuY8QpyjwljzCYfs07XKwbC_0OZyxnY0FjCI/edit?usp=sharing" target="blank">
-                        <FaUser color="black" size={30}/>
+                        {/* <FaUser color="black" size={30}/> */}
+                        <img style={{height: "32px"}} src="./cv-icon.png" alt='CV Link'/>
                     </a>
                 </div>
             </div>
