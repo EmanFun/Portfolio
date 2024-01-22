@@ -11,9 +11,10 @@ const Contact = () => {
     <section className={divider}>
     </section>
     <section className={container}>
+    {/* 
         <form className={form} onSubmit={handleSubmit((data)=> console.log(data))}>
           
-          <h3>Contactame!</h3>
+          <h3>¡Contactame!</h3>
           
           <label>Nombre</label>
           <input  {...register('name', {required: true})}/>
@@ -22,7 +23,9 @@ const Contact = () => {
 
           <input  type='submit' value='Enviar' />
         </form>
-    </section>
+      */}
+    </section> 
+
   </>
   );
 };

@@ -8,9 +8,12 @@
 }
 .container{
    margin: 2rem;
+   display:flex;
+   justify-content: space-around;
 }
 
 .educationContainer{
+    width: 60%;
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
@@ -18,7 +21,7 @@
 }
 .educationContainer div{
     flex-grow: 1;
-    flex-basis: 80px;
+    flex-basis: 155px;
     padding: 1rem;
     border: solid 1px;
     border-radius: 1.5rem;
@@ -28,8 +31,17 @@
 .langContainer{
     margin: 2rem;
 }
+@media only screen and (max-width: 1300px) {
+    .container{
+        justify-content:baseline;
 
-@media only screen and (max-width: 540px){
+    }
+    .educationContainer{
+        width: inherit;
+    }
+}
+
+@media only screen and (max-width: 680px){
     .wrapper{
         height: 800px;
     }

@@ -9,7 +9,7 @@ import {
 
 const educationList =[
   {title: 'Full Stack Web Developer', institution: 'Henry', type: 'BootCamp', duration: '700Hs Teórico-Práctico', year: '2022'},
-  {title: 'Lic. en Ciencias de la Computación', institution: 'UBA', type: 'University Career', duration: 'Grado', year: '2023'}
+  {title: 'Lic. en Ciencias de la Computación', institution: 'UBA', type: 'Carrera Universitaria', duration: 'Grado', year: '2023'}
 
 ]
 
@@ -21,8 +21,8 @@ const Educaction = () => {
   return (
     <section className={wrapper}>
       <hr />
-      <section className={container}>
         <h2>EDUCACIÓN PROFESIONAL</h2>
+      <section className={container}>
         <div className={educationContainer}>
           <Each of={educationList} render={(item, index)=>(
             <div key={index}>

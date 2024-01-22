@@ -43,7 +43,7 @@ const Skills = () => {
         <hr/>
         <TypeAnimation
             sequence={[
-                'TECHS SKILLS',
+                'TECNOLOGÍAS ',
                 1000,
             ]}
             wrapper="h2"

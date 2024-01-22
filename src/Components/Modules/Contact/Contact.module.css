@@ -1,4 +1,6 @@
 .divider{
+    position: relative;
+    top: 1px;
     color: white;
     width: 100%;
     height: 100vh;
@@ -9,6 +11,8 @@
 }
 @media only screen and (max-width: 1520px) {
     .divider{
+        position: relative;
+        top: 1.5px;
         height: 35vh;
         background-position:bottom;
         background-size: contain;
@@ -17,7 +21,7 @@
 }
 
 .container{
-    height: 35vh;
+    height: 20vh;
     width: 100%;
     background-color: #0B0B0D;
     color: #F9F9F9;
