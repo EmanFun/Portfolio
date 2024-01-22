@@ -1,6 +1,7 @@
 .container {
     height: 15%;
     width: 70%;
+    font-weight: 600;
 }
 
 .projectsContainer {
@@ -9,8 +10,6 @@
     align-items: center;
     flex-wrap: wrap;
 }
-
-
 
 .projectCard {
     flex-grow: 1;
@@ -23,4 +22,81 @@
     border-radius: 2rem;
     height: 10%;
     
+}
+
+
+.modalOverlay {
+    position: fixed;
+    padding: 0;
+    top: 20%;
+    left: 25%;
+    width: 50%;
+    height: 400px;
+    background-color:#F5E134;
+    border: solid 5px;
+    border-radius: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.modalContainer{
+    padding: 0;
+    margin: 10px;
+    border-radius: 2rem;
+    max-height: 100%;
+    max-width: 100%;
+    height:auto;
+    width: auto;
+    text-align: center;
+    animation: fadeIn 0.05s ease-in-out;
+    
+}
+@media only screen and (max-width: 795px) {
+    .modalOverlay{
+        top: %;
+        left: 15%;
+        width: 70%;
+        height: 530px;
+    }
+
+}
+
+.closeModal{
+    position: relative;
+    top: 1rem;
+    cursor: pointer;
+    background: transparent;
+    border: solid 2px;
+    border-radius: 8px;
+    font-weight: 900;
+
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.icons{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.icons div{
+    flex-grow: 1;
+    flex-basis: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }

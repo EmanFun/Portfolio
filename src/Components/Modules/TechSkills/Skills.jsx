@@ -3,7 +3,7 @@ import { TypeAnimation } from "react-type-animation";
 import {container, skillsContainer} from './skills.module.css'
 import { Each } from "../../../utils/common/Each";
 
-const frontTechs = [
+export const frontTechs = [
     './TechIcons/bootstrap.svg',
     '/TechIcons/javascript.svg',
     '/TechIcons/css3.svg',
@@ -14,8 +14,9 @@ const frontTechs = [
     '/TechIcons/tailwindcss.svg',
     '/TechIcons/nextdotjs.svg',
 ]
-const backTechs = [
-    
+export const backTechs = [
+    '/TechIcons/mysql.svg',
+    '/TechIcons/springboot.svg',
     '/TechIcons/django.svg',
     '/TechIcons/docker.svg',
     '/TechIcons/express.svg',
@@ -28,7 +29,7 @@ const backTechs = [
     '/TechIcons/sequelize.svg',
     '/TechIcons/sqlite.svg',
 ]
-const otherTechs=[
+export const otherTechs=[
     
     '/TechIcons/git.svg',
     '/TechIcons/github.svg',
@@ -37,7 +38,7 @@ const otherTechs=[
     '/TechIcons/visualstudiocode.svg'
 ]
 
-const Skills = () => {
+export const Skills = () => {
   return (
     <section className={container}>
         <hr/>
@@ -100,5 +101,3 @@ const Skills = () => {
     </section>
     );
 };
-
-export default Skills;
