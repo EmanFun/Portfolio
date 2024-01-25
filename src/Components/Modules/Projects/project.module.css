@@ -34,7 +34,7 @@
     height: 400px;
     background-color:#F5E134;
     border: solid 5px;
-    border-radius: 7rem;
+    border-radius: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,7 +44,7 @@
 .modalContainer{
     padding: 0;
     margin: 10px;
-    border-radius: 2rem;
+    border-radius: 1rem;
     max-height: 100%;
     max-width: 100%;
     height:auto;
@@ -55,22 +55,25 @@
 }
 @media only screen and (max-width: 795px) {
     .modalOverlay{
-        top: %;
+        top: 10%;
         left: 15%;
         width: 70%;
-        height: 530px;
+        height: 580px;
     }
 
 }
 
 .closeModal{
     position: relative;
+    height: 3rem;
+    width: 5rem;
     top: 1rem;
     cursor: pointer;
     background: transparent;
     border: solid 2px;
     border-radius: 8px;
     font-weight: 900;
+    font-size: 1rem;
 
 }
 

@@ -21,17 +21,8 @@
                 style={{ fontWeight: 'bolder' }}
                 repeat={Infinity}
                 />
-                <TypeAnimation
-                sequence={[
-                    'Emanuel Funes',
-                    1000,
-
-                ]}
-                wrapper="h2"
-                speed={50}
-                style={{ fontWeight: 'bolder' }}
-                repeat={Infinity}
-                />
+                <h2>Ignacio Emanuel Funes</h2>
+                
                 <p>
                     Soy un apasionado desarrollador Full Stack Web Jr con una sólida base en tecnologías front-end y 
                     back-end. Mi entusiasmo por la programación y la creación de soluciones tecnológicas me impulsa 

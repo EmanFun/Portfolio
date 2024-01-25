@@ -10,10 +10,10 @@ import { container,
 import { Each } from '../../../utils/common/Each';
 import { FaExternalLinkSquareAlt } from "react-icons/fa";
 
-import { backTechs, frontTechs, otherTechs } from "../TechSkills/Skills";
+import { backTechs, frontTechs } from "../TechSkills/Skills";
 
 const projectsArray = [
-    {title:'PokemonApp', rol: 'FullStack', link: 'https://pokemon-six-ashy.vercel.app/', description:'Diseño y desarrollo de una aplicación web en la que se manejan datos traídos de una API externa y son servidos directamente desde nuestra API en el frontend, como parte de proyecto individual del bootcamp de henry, alguna des sus funcionalidades son búsquedas, filtrados, combinados, ordenamientos, creación de caracteres, etc.', technologies:["react", "redux", "css3", "express", "nodedotjs", "postgresql", "sequelize"]},
+    {title:'PokemonApp', rol: 'FullStack', link: 'https://pokemon-six-ashy.vercel.app/', description:'Diseñar y Desarrollar una App de Pokemons que incluye: búsquedas, filtrados combinados, ordenamientos, etc.', technologies:["react", "redux", "css3", "express", "nodedotjs", "postgresql", "sequelize"]},
     {title:'HenryGaming', rol: 'FullStack', link: 'https://github.com/EmanFun/PF-HENRYGAMING', description:'Diseñar y Desarrollar un Ecommerce de ventas de insumos tecnológicos que incluye: búsquedas, filtrados combinados, ordenamientos, autentificación, dashboard Vendedor y cliente, etc.', technologies:[ "redux", "react","bootstrap", "express", "nodedotjs", "postgresql", "sequelize"] }, 
     {title:'AgileStrat', rol: 'Backend', link: 'https://agilestrat-frontend.vercel.app/', description:'Diseño y desarrollo de una API para una startup que comercializa servicios y cursos a pequeños emprendedores, algunas de sus funcionalidades son, regustri de usuarios, Gestión de cursos, sistema de calificaciones y reseñas, panel de administrador, etc.', technologies:['java', 'springboot', 'mysql' ]},
     {title: 'PortFolio', rol: 'Frontend', link: 'https://portfolio-inky-eta-41.vercel.app/', description:'Desarrollé mi portafolio como una expresión visual de mi trayectoria y habilidades en desarrollo web, destacando proyectos significativos y demostrando mi pasión por la creación de experiencias digitales innovadoras.', technologies: ['react', 'css3', "html5"] },

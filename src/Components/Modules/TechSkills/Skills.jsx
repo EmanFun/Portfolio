@@ -42,17 +42,8 @@ export const Skills = () => {
   return (
     <section className={container}>
         <hr/>
-        <TypeAnimation
-            sequence={[
-                'TECNOLOGÍAS ',
-                1000,
-            ]}
-            wrapper="h2"
-            speed={50}
-
-            repeat={1}
-        />
-
+        <h2>TECNOLOGÍAS </h2>
+            
         <div className={skillsContainer}>
             <h4>Front-End</h4>
             <Each of={frontTechs} render={(item, index)=>(
