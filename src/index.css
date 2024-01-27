@@ -3,8 +3,8 @@
   line-height: 1.5;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-  color: #0B0B0D;
+
+  color:#242424;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;  
@@ -16,19 +16,13 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #F5E134;
-  
   background-size: 100%;
   background-attachment: fixed;
-
-
-
-
 }
 hr{
   border: 0;
   height: 0;
-  box-shadow: 0 0 10px 1px black;
+  box-shadow: 0 0 2px 1px #242424;
 }
 hr:after{
   content: "\00a0";;

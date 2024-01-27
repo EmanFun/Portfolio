@@ -20,7 +20,7 @@ const langList = [
 const Educaction = () => {
   return (
     <section className={wrapper}>
-      <hr />
+
         <h2>EDUCACIÓN PROFESIONAL</h2>
       <section className={container}>
         <div className={educationContainer}>
@@ -34,7 +34,7 @@ const Educaction = () => {
           )}/>
         </div>
       </section>
-      <hr />
+
       <section className={langContainer}>
         <h2>Idiomas</h2>
         <div >

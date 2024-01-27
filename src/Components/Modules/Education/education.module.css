@@ -1,13 +1,12 @@
 .wrapper{
     display: list-item;
     list-style: none;
-    margin: 2rem;
     height: 500px;
-    width: 70%;
+    width: 100%;
 
 }
 .container{
-   margin: 2rem;
+   margin: 4rem;
    display:flex;
    justify-content: space-around;
 }
@@ -25,7 +24,7 @@
     padding: 1rem;
     border: solid 1px;
     border-radius: 1.5rem;
-    box-shadow: 0 0 10px 1px black;
+    box-shadow: 0 0 1px 1px black;
 }
 
 .langContainer{

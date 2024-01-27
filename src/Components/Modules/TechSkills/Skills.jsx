@@ -1,5 +1,5 @@
 import React from "react";
-import { TypeAnimation } from "react-type-animation";
+
 import {container, skillsContainer} from './skills.module.css'
 import { Each } from "../../../utils/common/Each";
 
@@ -41,7 +41,7 @@ export const otherTechs=[
 export const Skills = () => {
   return (
     <section className={container}>
-        <hr/>
+
         <h2>TECNOLOGÍAS </h2>
             
         <div className={skillsContainer}>

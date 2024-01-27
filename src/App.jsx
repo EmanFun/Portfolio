@@ -1,5 +1,3 @@
-
-import {Contact} from './Components/Modules/Contact'
 import './App.css'
 import { About } from './Components/Modules/AboutUs'
 import { Projects } from './Components/Modules/Projects'
@@ -15,7 +13,7 @@ function App() {
     <Projects/>
     <Skills/>
     <Educaction/>
-    <Contact/>
+
     <Social/>
     </main>
   )
