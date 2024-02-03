@@ -20,8 +20,10 @@ export const Wrapper = styled.div`
 
 export const Link = styled.div`
     padding: 1rem;
-    :hover{
-        transform: scale(1.1)
+    transition: transform 0.5s ease-in-out;
+    &:hover{
+        transform: scale(1.4);
+        transition-delay: 0.2s;
     }
     @media only screen and (max-width: 390px) {
         padding: 5px;

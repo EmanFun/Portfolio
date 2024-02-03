@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import {
     WrapperNav,
     NavItems,
@@ -11,18 +11,18 @@ function Nav() {
     <WrapperNav>
 
         <NavItems>
-          <Link to={'/about'}>
-            <NavButton>About</NavButton>
-          </Link>
-          <Link to={'/projects'}>
-            <NavButton>Projects</NavButton>
-          </Link>
-          <Link to={'/skills'}>
-            <NavButton>TechSkill</NavButton>
-          </Link>
-          <Link to={'/education'}>
-            <NavButton>Education</NavButton>
-          </Link>
+          <NavButton to={'/about'}>
+            About
+          </NavButton>
+          <NavButton to={'/projects'}>
+            Projects
+          </NavButton>
+          <NavButton to={'/skills'}>
+            TechSkill
+          </NavButton>
+          <NavButton to={'/education'}>
+            Education
+          </NavButton>
         </NavItems>
     </WrapperNav>
   );

@@ -30,10 +30,6 @@ export const Card = styled.div`
     flex-basis: 100px;
     margin: 15px;
     padding: 10px;
-    border: solid 1px;
-    box-shadow: 0 0 1px 1px black;
-    border-color: #242424;
-    border-radius: 2rem;
     height: 10%;
 `
 

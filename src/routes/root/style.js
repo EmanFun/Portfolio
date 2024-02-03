@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
 
 export const WrapperInit = styled.section`
     color: #370807;
@@ -11,21 +12,29 @@ export const WrapperInit = styled.section`
 
 export const Wrapper = styled.div`
     margin-left: 4rem;
-    justify-content: start;
+    display: list-item;
+    list-style: none;
+
 `
 
 export const InitTitle = styled.h1`
     text-align: start;
 `
 
-export const InitButton = styled.button`
+export const LinkButton = styled(NavLink)`
     display: flex;
+    justify-content: center;
+    color: #370807;
+    font-weight: bold;
     background-color: transparent;
-    border: 1px solid #370807;
-    padding: 1rem;
-    border-radius: 1rem;
+    margin: 2rem;
     text-decoration: none;
+    transition: transform 0.5s ease-in-out;
     
+    &:hover{
+        transform: scale(1.5);
+        transition-delay: 0.2s;
+    }
 
 `
 
