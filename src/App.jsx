@@ -4,7 +4,7 @@ import { Projects } from './Components/Modules/Projects'
 import  { Skills }  from './Components/Modules/TechSkills'
 import { Social } from './Components/Modules/Social'
 import { Educaction } from './Components/Modules/Education'
-import { Nav }from './Components/Modules/Nav'
+import Nav from './Components/Modules/Nav/Nav.jsx'
 
 
 import {
