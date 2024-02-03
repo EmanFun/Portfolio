@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export const SkillWrapper = styled.section`
     height: 81.7vh;
-    padding-top: 10rem;
+    padding-top: 7rem;
     background-image: url('./projectImage.jpg');
     background-size: cover;
     color: #090100;

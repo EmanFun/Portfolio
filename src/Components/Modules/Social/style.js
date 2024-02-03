@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const SocialWrapper = styled.footer`
-    position: static;
+    position: fixed;
     bottom: 1rem;
     width: 100vw;
     display: flex;
