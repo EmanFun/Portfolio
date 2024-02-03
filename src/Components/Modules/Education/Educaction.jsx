@@ -1,11 +1,13 @@
 import React from "react";
 import { Each } from "../../../utils/common/Each"
+
 import {
-  container,
-  educationContainer,
-  langContainer,
-  wrapper
-} from "./education.module.css"
+  WrapperEducation,
+  Wrapper,
+  Title,
+  SubTitle,
+  Text
+} from './style';
 
 const educationList =[
   {title: 'Full Stack Web Developer', institution: 'Henry', type: 'BootCamp', duration: '700Hs Teórico-Práctico', year: '2022'},
@@ -13,39 +15,22 @@ const educationList =[
 
 ]
 
-const langList = [
-  {languague: 'Ingles', certification: 'A2 Elementary'}
-]
 
 const Educaction = () => {
   return (
-    <section className={wrapper}>
-
-        <h2>EDUCACIÓN PROFESIONAL</h2>
-      <section className={container}>
-        <div className={educationContainer}>
+      <WrapperEducation >
+        <Title>EDUCACIÓN PROFESIONAL</Title>
+        <div>
           <Each of={educationList} render={(item, index)=>(
-            <div key={index}>
-              <h3>{item.title}</h3>
-              <p>{item.type}</p>
-              <p>{item.institution}</p>
-              <p>{item.duration} {item.year}</p>
-            </div>
+            <Wrapper key={index}>
+              <SubTitle>{item.title}</SubTitle>
+              <Text>{item.type}</Text>
+              <Text>{item.institution}</Text>
+              <Text>{item.duration} {item.year}</Text>
+            </Wrapper>
           )}/>
         </div>
-      </section>
-
-      <section className={langContainer}>
-        <h2>Idiomas</h2>
-        <div >
-            <Each of={langList} render={(item, index)=>(
-              <div key={index}>
-                <p>{item.languague} {item.certification}</p>
-              </div>
-            )}/>
-        </div>
-      </section>
-    </section>
+      </WrapperEducation>
   );
 };
 

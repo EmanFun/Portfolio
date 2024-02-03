@@ -1,11 +1,17 @@
  import React from "react";
  import { TypeAnimation } from 'react-type-animation';
- import { container, about } from './About.module.css';
+ import {
+    WrapperAbout,
+    Wrapper,
+    AboutTitle,
+    AboutText,
+ } from './style'
+
  
  const About = () => {
    return (
-        <section className={container}>
-            <div className={about}>
+        <WrapperAbout >
+            <Wrapper >
                 <TypeAnimation
                 sequence={[
                     'Full Stack',
@@ -21,17 +27,17 @@
                 style={{ fontWeight: 'bolder' }}
                 repeat={Infinity}
                 />
-                <h2>Ignacio Emanuel Funes</h2>
+                <AboutTitle>Ignacio Emanuel Funes</AboutTitle>
                 
-                <p>
+                <AboutText>
                     Soy un apasionado desarrollador Full Stack Web Jr con una sólida base en tecnologías front-end y 
                     back-end. Mi entusiasmo por la programación y la creación de soluciones tecnológicas me impulsa 
                     a buscar oportunidades emocionantes en el campo de la tecnología. Con una mentalidad orientada a 
                     la resolución de problemas y un compromiso con el aprendizaje continuo,
                     aspiro a contribuir al diseño y desarrollo de aplicaciones web de alta calidad.
-                </p> 
-            </div>
-        </section>
+                </AboutText> 
+            </Wrapper>
+        </WrapperAbout>
     );
  };
  

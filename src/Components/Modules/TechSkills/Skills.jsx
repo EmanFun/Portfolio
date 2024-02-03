@@ -1,6 +1,14 @@
 import React from "react";
 
-import {container, skillsContainer} from './skills.module.css'
+import {
+    SkillWrapper,
+    Wrapper,
+    Card,
+    TechName,
+    Title,
+    SubTitle
+} from './style';
+
 import { Each } from "../../../utils/common/Each";
 
 export const frontTechs = [
@@ -40,29 +48,29 @@ export const otherTechs=[
 
 export const Skills = () => {
   return (
-    <section className={container}>
+    <SkillWrapper>
 
-        <h2>TECNOLOGÍAS </h2>
+        <Title>TECNOLOGÍAS </Title>
             
-        <div className={skillsContainer}>
-            <h4>Front-End</h4>
+        <Wrapper>
+            <SubTitle>Front-End</SubTitle>
             <Each of={frontTechs} render={(item, index)=>(
-                <div key={index}>
+                <Card key={index}>
                     <svg 
                             width={50}
                             height={50}
                             xmlns="http://www.w3.org/2000/svg"
                         >
-                        <image href={item} width={50} height={50}/>
+                        <image  href={item} width={50} height={50}/>
                     </svg> 
-                <p>{item.substring(item.lastIndexOf('/') + 1, item.lastIndexOf('.svg'))}</p>
-            </div> 
+                <TechName>{item.substring(item.lastIndexOf('/') + 1, item.lastIndexOf('.svg'))}</TechName>
+            </Card> 
             )}/>
-        </div>
-        <div className={skillsContainer}>
-            <h4>Back-End</h4>
+        </Wrapper>
+        <Wrapper>
+            <SubTitle>Back-End</SubTitle>
             <Each of={backTechs} render={(item, index)=>(
-                <div key={index}>
+                <Card key={index}>
                     <svg 
                             width={50}
                             height={50}
@@ -70,14 +78,14 @@ export const Skills = () => {
                         >
                         <image href={item} width={50} height={50}/>
                     </svg> 
-                <p>{item.substring(item.lastIndexOf('/') + 1, item.lastIndexOf('.svg'))}</p>
-            </div> 
+                <TechName>{item.substring(item.lastIndexOf('/') + 1, item.lastIndexOf('.svg'))}</TechName>
+            </Card> 
             )}/>
-        </div>
-        <div className={skillsContainer}>
-            <h4>Others</h4>
+        </Wrapper>
+        <Wrapper>
+            <SubTitle>Others</SubTitle>
             <Each of={otherTechs} render={(item, index)=>(
-                <div key={index}>
+                <Card key={index}>
                     <svg 
                             width={50}
                             height={50}
@@ -85,10 +93,10 @@ export const Skills = () => {
                         >
                         <image href={item} width={50} height={50}/>
                     </svg> 
-                <p>{item.substring(item.lastIndexOf('/') + 1, item.lastIndexOf('.svg'))}</p>
-            </div> 
+                <TechName>{item.substring(item.lastIndexOf('/') + 1, item.lastIndexOf('.svg'))}</TechName>
+            </Card> 
             )}/>
-        </div>
-    </section>
+        </Wrapper>
+    </SkillWrapper>
     );
 };

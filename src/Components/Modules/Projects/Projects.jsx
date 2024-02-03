@@ -1,12 +1,16 @@
 import React from "react";
-import { container,
-  projectsContainer,
-  projectCard,
-} from './project.module.css';
+
+import {
+  WrapperProjects,
+  Wrapper,
+  Card,
+  Title,
+  Text,
+  Link
+} from './style'
+
 import { Each } from '../../../utils/common/Each';
 import { FaExternalLinkSquareAlt } from "react-icons/fa";
-
-
 
 const projectsArray = [
     {title:'PokemonApp', rol: 'FullStack', link: 'https://pokemon-six-ashy.vercel.app/'},
@@ -19,25 +23,22 @@ const projectsArray = [
     {title: 'PortFolio', rol: 'Frontend', link: 'https://portfolio-inky-eta-41.vercel.app/'}, */
 
 
-
-
-
 const Projects = () => {
 
   return (
-    <section className={container}>
-        <div className={projectsContainer}>
+    <WrapperProjects>
+        <Wrapper >
           <Each of={projectsArray} render={(item, index)=>(
-            <div key={index} className={projectCard}>
-              <h3>{item.title}</h3>
-              <p>Rol: {item.rol}</p>
-              <a id={`${index}`}  href={item.link} target="self">
+            <Card key={index} >
+              <Title>{item.title}</Title>
+              <Text>Rol: {item.rol}</Text>
+              <Link id={`${index}`}  href={item.link} target="self">
                 <FaExternalLinkSquareAlt color="black" size={30}/>
-              </a>
-            </div> 
+              </Link>
+            </Card> 
           )}/>
-        </div>
-    </section>
+        </Wrapper>
+    </WrapperProjects>
   );
 };
 
