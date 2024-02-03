@@ -12,16 +12,16 @@ function Nav() {
 
         <NavItems>
           <NavButton to={'/about'}>
-            About
+            Sobre mí
           </NavButton>
           <NavButton to={'/projects'}>
-            Projects
+            Proyectos
           </NavButton>
           <NavButton to={'/skills'}>
-            TechSkill
+            Habilidades
           </NavButton>
           <NavButton to={'/education'}>
-            Education
+            Estudios
           </NavButton>
         </NavItems>
     </WrapperNav>
