@@ -13,6 +13,8 @@ export const Wrapper = styled.div`
     margin: 2rem;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
     font-weight: bolder; 
     @media only screen and (max-width: 430px) {
         margin: 5px;
@@ -38,15 +40,22 @@ export const Card = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
     @media only screen and (max-width: 430px) {
-
+        
         flex-basis: 65px;
         min-width: 65px;
         
-    p{
-        font-size: small;
+        p{
+            font-size: small;
+        }
     }
+    svg{
+        transition: transform 0.5s ease-in-out;
+        &:hover{
+            transform: scale(1.5);
+            transition-delay: 0.2s;
+
+        }
 }
 `
 export const Title = styled.h1`

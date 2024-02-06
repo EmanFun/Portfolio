@@ -57,11 +57,11 @@ export const Skills = () => {
             <Each of={frontTechs} render={(item, index)=>(
                 <Card key={index}>
                     <svg 
-                            width={50}
-                            height={50}
+                            width={30}
+                            height={30}
                             xmlns="http://www.w3.org/2000/svg"
                         >
-                        <image  href={item} width={50} height={50}/>
+                        <image  href={item} width={30} height={30}/>
                     </svg> 
                 <TechName>{item.substring(item.lastIndexOf('/') + 1, item.lastIndexOf('.svg'))}</TechName>
             </Card> 
@@ -72,11 +72,11 @@ export const Skills = () => {
             <Each of={backTechs} render={(item, index)=>(
                 <Card key={index}>
                     <svg 
-                            width={50}
-                            height={50}
+                            width={30}
+                            height={30}
                             xmlns="http://www.w3.org/2000/svg"
                         >
-                        <image href={item} width={50} height={50}/>
+                        <image href={item} width={30} height={30}/>
                     </svg> 
                 <TechName>{item.substring(item.lastIndexOf('/') + 1, item.lastIndexOf('.svg'))}</TechName>
             </Card> 
@@ -87,11 +87,11 @@ export const Skills = () => {
             <Each of={otherTechs} render={(item, index)=>(
                 <Card key={index}>
                     <svg 
-                            width={50}
-                            height={50}
+                            width={30}
+                            height={30}
                             xmlns="http://www.w3.org/2000/svg"
                         >
-                        <image href={item} width={50} height={50}/>
+                        <image href={item} width={30} height={30}/>
                     </svg> 
                 <TechName>{item.substring(item.lastIndexOf('/') + 1, item.lastIndexOf('.svg'))}</TechName>
             </Card> 
