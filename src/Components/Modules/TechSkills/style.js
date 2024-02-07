@@ -10,15 +10,17 @@ export const SkillWrapper = styled.section`
 
 `
 export const Wrapper = styled.div`
-    margin: 2rem;
+    margin: 1rem 2rem 6rem 2rem;
     display: flex;
     flex-wrap: wrap;
+
     justify-content: space-between;
     align-items: stretch;
     font-weight: bolder; 
-    @media only screen and (max-width: 430px) {
-        margin: 5px;
-        gap: 1px;
+
+    @media only screen and (max-width: 667px) {
+        margin-bottom: 1rem;
+        gap: 15px;
         image{
             padding: 0;
             margin: 0;
